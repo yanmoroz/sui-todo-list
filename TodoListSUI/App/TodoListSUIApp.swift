@@ -13,5 +13,6 @@ struct TodoListSUIApp: App {
         WindowGroup {
             ContentView()
         }
+        .modelContainer(for: Todo.self)
     }
 }

@@ -11,7 +11,25 @@
 		A35559EC2B6AF3BF00E8E0CD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35559EB2B6AF3BF00E8E0CD /* ContentView.swift */; };
 		A35559EE2B6AF3C000E8E0CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A35559ED2B6AF3C000E8E0CD /* Assets.xcassets */; };
 		A35559F12B6AF3C000E8E0CD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A35559F02B6AF3C000E8E0CD /* Preview Assets.xcassets */; };
+		A35559F92B6AF43100E8E0CD /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35559F82B6AF43100E8E0CD /* Todo.swift */; };
+		A35559FC2B6AF55900E8E0CD /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35559FB2B6AF55900E8E0CD /* HomeView.swift */; };
+		A35559FE2B6AFB5600E8E0CD /* CompletedTodoListSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35559FD2B6AFB5600E8E0CD /* CompletedTodoListSection.swift */; };
+		A3555A012B6B075400E8E0CD /* TodoRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3555A002B6B075400E8E0CD /* TodoRowView.swift */; };
+		A3555A032B6BEC2200E8E0CD /* ActiveTodoListSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3555A022B6BEC2200E8E0CD /* ActiveTodoListSection.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A3555A212B6C01DC00E8E0CD /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		A35559E62B6AF3BF00E8E0CD /* TodoListSUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoListSUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -19,6 +37,13 @@
 		A35559EB2B6AF3BF00E8E0CD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A35559ED2B6AF3C000E8E0CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A35559F02B6AF3C000E8E0CD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A35559F82B6AF43100E8E0CD /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
+		A35559FB2B6AF55900E8E0CD /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		A35559FD2B6AFB5600E8E0CD /* CompletedTodoListSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletedTodoListSection.swift; sourceTree = "<group>"; };
+		A3555A002B6B075400E8E0CD /* TodoRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoRowView.swift; sourceTree = "<group>"; };
+		A3555A022B6BEC2200E8E0CD /* ActiveTodoListSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveTodoListSection.swift; sourceTree = "<group>"; };
+		A3555A0B2B6C01DB00E8E0CD /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		A3555A0D2B6C01DB00E8E0CD /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				A35559E82B6AF3BF00E8E0CD /* TodoListSUI */,
+				A3555A0A2B6C01DB00E8E0CD /* Frameworks */,
 				A35559E72B6AF3BF00E8E0CD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,10 +77,11 @@
 		A35559E82B6AF3BF00E8E0CD /* TodoListSUI */ = {
 			isa = PBXGroup;
 			children = (
-				A35559E92B6AF3BF00E8E0CD /* TodoListSUIApp.swift */,
-				A35559EB2B6AF3BF00E8E0CD /* ContentView.swift */,
 				A35559ED2B6AF3C000E8E0CD /* Assets.xcassets */,
+				A3555A042B6BEF0A00E8E0CD /* App */,
+				A35559F72B6AF42900E8E0CD /* Model */,
 				A35559EF2B6AF3C000E8E0CD /* Preview Content */,
+				A35559FA2B6AF54A00E8E0CD /* View */,
 			);
 			path = TodoListSUI;
 			sourceTree = "<group>";
@@ -67,6 +94,43 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		A35559F72B6AF42900E8E0CD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A35559F82B6AF43100E8E0CD /* Todo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A35559FA2B6AF54A00E8E0CD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A3555A022B6BEC2200E8E0CD /* ActiveTodoListSection.swift */,
+				A35559FD2B6AFB5600E8E0CD /* CompletedTodoListSection.swift */,
+				A35559FB2B6AF55900E8E0CD /* HomeView.swift */,
+				A3555A002B6B075400E8E0CD /* TodoRowView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A3555A042B6BEF0A00E8E0CD /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A35559EB2B6AF3BF00E8E0CD /* ContentView.swift */,
+				A35559E92B6AF3BF00E8E0CD /* TodoListSUIApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A3555A0A2B6C01DB00E8E0CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A3555A0B2B6C01DB00E8E0CD /* WidgetKit.framework */,
+				A3555A0D2B6C01DB00E8E0CD /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,6 +141,7 @@
 				A35559E22B6AF3BF00E8E0CD /* Sources */,
 				A35559E32B6AF3BF00E8E0CD /* Frameworks */,
 				A35559E42B6AF3BF00E8E0CD /* Resources */,
+				A3555A212B6C01DC00E8E0CD /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
@@ -138,6 +203,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A35559EC2B6AF3BF00E8E0CD /* ContentView.swift in Sources */,
+				A3555A012B6B075400E8E0CD /* TodoRowView.swift in Sources */,
+				A35559FE2B6AFB5600E8E0CD /* CompletedTodoListSection.swift in Sources */,
+				A3555A032B6BEC2200E8E0CD /* ActiveTodoListSection.swift in Sources */,
+				A35559F92B6AF43100E8E0CD /* Todo.swift in Sources */,
+				A35559FC2B6AF55900E8E0CD /* HomeView.swift in Sources */,
 				A35559EA2B6AF3BF00E8E0CD /* TodoListSUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,8 +337,10 @@
 		A35559F52B6AF3C000E8E0CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TodoListSUI/TodoListSUI.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TodoListSUI/Preview Content\"";
@@ -296,8 +368,10 @@
 		A35559F62B6AF3C000E8E0CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TodoListSUI/TodoListSUI.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TodoListSUI/Preview Content\"";
