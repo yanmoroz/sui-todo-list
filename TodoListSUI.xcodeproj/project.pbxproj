@@ -16,6 +16,10 @@
 		A35559FE2B6AFB5600E8E0CD /* CompletedTodoListSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35559FD2B6AFB5600E8E0CD /* CompletedTodoListSection.swift */; };
 		A3555A012B6B075400E8E0CD /* TodoRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3555A002B6B075400E8E0CD /* TodoRowView.swift */; };
 		A3555A032B6BEC2200E8E0CD /* ActiveTodoListSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3555A022B6BEC2200E8E0CD /* ActiveTodoListSection.swift */; };
+		A3555A2E2B6C25CC00E8E0CD /* photo_2024-02-01 22.17.25.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A3555A2A2B6C25CB00E8E0CD /* photo_2024-02-01 22.17.25.jpeg */; };
+		A3555A2F2B6C25CC00E8E0CD /* photo_2024-02-01 22.17.23.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A3555A2B2B6C25CB00E8E0CD /* photo_2024-02-01 22.17.23.jpeg */; };
+		A3555A302B6C25CC00E8E0CD /* photo_2024-02-01 22.17.21.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A3555A2C2B6C25CC00E8E0CD /* photo_2024-02-01 22.17.21.jpeg */; };
+		A3555A312B6C25CC00E8E0CD /* photo_2024-02-01 22.17.24.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A3555A2D2B6C25CC00E8E0CD /* photo_2024-02-01 22.17.24.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -44,6 +48,10 @@
 		A3555A022B6BEC2200E8E0CD /* ActiveTodoListSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveTodoListSection.swift; sourceTree = "<group>"; };
 		A3555A0B2B6C01DB00E8E0CD /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		A3555A0D2B6C01DB00E8E0CD /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		A3555A2A2B6C25CB00E8E0CD /* photo_2024-02-01 22.17.25.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "photo_2024-02-01 22.17.25.jpeg"; sourceTree = "<group>"; };
+		A3555A2B2B6C25CB00E8E0CD /* photo_2024-02-01 22.17.23.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "photo_2024-02-01 22.17.23.jpeg"; sourceTree = "<group>"; };
+		A3555A2C2B6C25CC00E8E0CD /* photo_2024-02-01 22.17.21.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "photo_2024-02-01 22.17.21.jpeg"; sourceTree = "<group>"; };
+		A3555A2D2B6C25CC00E8E0CD /* photo_2024-02-01 22.17.24.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "photo_2024-02-01 22.17.24.jpeg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +68,10 @@
 		A35559DD2B6AF3BF00E8E0CD = {
 			isa = PBXGroup;
 			children = (
-				A35559E82B6AF3BF00E8E0CD /* TodoListSUI */,
 				A3555A0A2B6C01DB00E8E0CD /* Frameworks */,
+				A3555A292B6C252C00E8E0CD /* github-images */,
 				A35559E72B6AF3BF00E8E0CD /* Products */,
+				A35559E82B6AF3BF00E8E0CD /* TodoListSUI */,
 			);
 			sourceTree = "<group>";
 		};
@@ -131,6 +140,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A3555A292B6C252C00E8E0CD /* github-images */ = {
+			isa = PBXGroup;
+			children = (
+				A3555A2C2B6C25CC00E8E0CD /* photo_2024-02-01 22.17.21.jpeg */,
+				A3555A2B2B6C25CB00E8E0CD /* photo_2024-02-01 22.17.23.jpeg */,
+				A3555A2D2B6C25CC00E8E0CD /* photo_2024-02-01 22.17.24.jpeg */,
+				A3555A2A2B6C25CB00E8E0CD /* photo_2024-02-01 22.17.25.jpeg */,
+			);
+			path = "github-images";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -191,6 +211,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A35559F12B6AF3C000E8E0CD /* Preview Assets.xcassets in Resources */,
+				A3555A302B6C25CC00E8E0CD /* photo_2024-02-01 22.17.21.jpeg in Resources */,
+				A3555A312B6C25CC00E8E0CD /* photo_2024-02-01 22.17.24.jpeg in Resources */,
+				A3555A2F2B6C25CC00E8E0CD /* photo_2024-02-01 22.17.23.jpeg in Resources */,
+				A3555A2E2B6C25CC00E8E0CD /* photo_2024-02-01 22.17.25.jpeg in Resources */,
 				A35559EE2B6AF3C000E8E0CD /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
